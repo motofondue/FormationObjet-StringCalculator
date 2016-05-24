@@ -2,6 +2,8 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class StringCalculatorTest {
+	private static final String NEWLINE_STRING = System.getProperty("line.separator");
+	
 	@Test
 	public void shouldBeZeroWhenEmptyStringGiven() {
 		// Given
@@ -37,9 +39,9 @@ public class StringCalculatorTest {
 		// Given
 		StringCalculator sc = new StringCalculator();
 		// When
-		int sum1 = sc.add("9,10,1,2");
-		int sum2 = sc.add("1,56,2");
-		int sum3 = sc.add("1,4,2,0,-1,5,7,-2");
+		int sum1 = sc.add("9"+NEWLINE_STRING+"10,1,2");
+		int sum2 = sc.add("1"+NEWLINE_STRING+"56"+NEWLINE_STRING+"2");
+		int sum3 = sc.add("1"+NEWLINE_STRING+"4,2"+NEWLINE_STRING+"0,-1,5"+NEWLINE_STRING+"7,-2");
 		int sum4 = sc.add("100,-100");
 		int sum5 = sc.add("1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20");
 		// Then
