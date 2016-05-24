@@ -15,8 +15,8 @@ public class StringCalculator {
 		String[] nums = numbers.split(SEPARATOR_STRING);
 		int total = 0;
 		// Loop on numbers count
-		for (int i=0; i<nums.length; i++) {
-			total += Integer.valueOf(nums[i]);
+		for (String num : nums) {
+			total += Integer.valueOf(num);
 		}
 		
 		// Return calculate sum
