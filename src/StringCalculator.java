@@ -1,15 +1,18 @@
 
 public class StringCalculator {
 
-	// Add numbers in a string with , as separator
+	private static final String SEPARATOR_STRING = ",";
+	private static final String EMPTY_STRING = "";
+
+	// Add numbers in a string with separator
 	public int add(String numbers) {
 		// Verify empty string
-		if (numbers.equals("")) {
+		if (numbers.equals(EMPTY_STRING)) {
 			return 0;
 		}
 		
 		// Extract numbers
-		String[] nums = numbers.split(",");
+		String[] nums = numbers.split(SEPARATOR_STRING);
 		// Return the number if it's unique
 		if (nums.length == 1) {
 			return Integer.valueOf(nums[0]);
