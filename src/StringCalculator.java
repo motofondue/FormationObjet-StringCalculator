@@ -11,6 +11,10 @@ public class StringCalculator {
 			return Integer.valueOf(nums[0]);
 		}
 		
+		if (nums.length == 2) {
+			return Integer.valueOf(nums[0]) + Integer.valueOf(nums[1]);
+		}
+		
 		return -1;
 	}
 }

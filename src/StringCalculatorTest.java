@@ -21,4 +21,14 @@ public class StringCalculatorTest {
 		// Then
 		assertEquals(1, sum);
 	}
+	
+	@Test
+	public void stringWithTwoNumbers() {
+		// Given
+		StringCalculator sc = new StringCalculator();
+		// When
+		int sum = sc.add("1,2");
+		// Then
+		assertEquals(3, sum);
+	}
 }
