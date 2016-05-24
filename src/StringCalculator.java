@@ -13,17 +13,13 @@ public class StringCalculator {
 		
 		// Extract numbers
 		String[] nums = numbers.split(SEPARATOR_STRING);
-		// Return the number if it's unique
-		if (nums.length == 1) {
-			return Integer.valueOf(nums[0]);
+		int total = 0;
+		// Loop on numbers count
+		for (int i=0; i<nums.length; i++) {
+			total += Integer.valueOf(nums[i]);
 		}
 		
-		// Return sum if two numbers are given
-		if (nums.length == 2) {
-			return Integer.valueOf(nums[0]) + Integer.valueOf(nums[1]);
-		}
-		
-		// Default return
-		return -1;
+		// Return calculate sum
+		return total;
 	}
 }

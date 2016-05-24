@@ -31,4 +31,14 @@ public class StringCalculatorTest {
 		// Then
 		assertEquals(3, sum);
 	}
+	
+	@Test
+	public void shouldBeTwentyTwoWhenNineElevenOneAndTwoGiven() {
+		// Given
+		StringCalculator sc = new StringCalculator();
+		// When
+		int sum = sc.add("9,10,1,2");
+		// Then
+		assertEquals(22, sum);
+	}
 }
