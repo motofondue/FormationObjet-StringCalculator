@@ -5,8 +5,12 @@ public class StringCalculator {
 		if (numbers.equals("")) {
 			return 0;
 		}
-		else {
-			return -1;
+		
+		String[] nums = numbers.split(",");
+		if (nums.length == 1) {
+			return Integer.valueOf(nums[0]);
 		}
+		
+		return -1;
 	}
 }

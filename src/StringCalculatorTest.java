@@ -11,4 +11,14 @@ public class StringCalculatorTest {
 		// Then
 		assertEquals(0, sum);
 	}
+	
+	@Test
+	public void stringWithOneNumber() {
+		// Given
+		StringCalculator sc = new StringCalculator();
+		// When
+		int sum = sc.add("1");
+		// Then
+		assertEquals(1, sum);
+	}
 }
