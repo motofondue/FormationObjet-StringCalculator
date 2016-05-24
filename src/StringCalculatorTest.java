@@ -3,7 +3,7 @@ import static org.junit.Assert.*;
 
 public class StringCalculatorTest {
 	@Test
-	public void emptyStringToZero() {
+	public void shouldBeZeroWhenEmptyStringGiven() {
 		// Given
 		StringCalculator sc = new StringCalculator();
 		// When
@@ -13,7 +13,7 @@ public class StringCalculatorTest {
 	}
 	
 	@Test
-	public void stringWithOneNumber() {
+	public void shouldBeOneWhenOneGiven() {
 		// Given
 		StringCalculator sc = new StringCalculator();
 		// When
@@ -23,7 +23,7 @@ public class StringCalculatorTest {
 	}
 	
 	@Test
-	public void stringWithTwoNumbers() {
+	public void shouldBeThreeWhenOneAndTwoGiven() {
 		// Given
 		StringCalculator sc = new StringCalculator();
 		// When
